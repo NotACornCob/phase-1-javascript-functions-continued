@@ -10,7 +10,8 @@ function mondayWork(activity = 'go to the office') {
 }
 
 function wrapAdjective(flair = "*") {
-    return innerFunction = function (thing = "special") {
+    const innerFunction = function (thing = "special") {
         return `You are ${flair}${thing}${flair}!`;
     };
+    return innerFunction;
 }
